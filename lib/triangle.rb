@@ -8,7 +8,6 @@ class Triangle
   end
 
   def kind
-    binding.pry
     boolean = @sides.combination(2).any? {|a, b| a == b }
       if boolean == true
         :equilateral
