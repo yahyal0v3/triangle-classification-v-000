@@ -8,12 +8,11 @@ class Triangle
   end
 
   def kind
-    binding.pry
     kind = nil
     @sides.combination(3).each do |a, b, c|
       if a == b && b == c
         kind = :equilateral
-      elsif b != c || a != b || a != c
+      elsif b != c && a != b && a != c
         kind = :scalene
       else
         kind = :isosceles
