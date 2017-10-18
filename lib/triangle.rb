@@ -8,11 +8,12 @@ class Triangle
   end
 
   def kind
-    @sides.combination(2).each do |a, b| 
-      if a == b 
+    binding.pry 
+    @sides.combination(2).each do |a, b|
+      if a == b
         :equilateral
       end
-    end 
+    end
   end
 
 end
