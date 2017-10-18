@@ -12,8 +12,8 @@ class Triangle
     @sides.combination(3).each do |a, b, c|
       if a < 1 || b < 1 || c < 1
         raise TriangleError
-      elsif a < b && c < b || b < a && c < a || a < c && b < c
-        raise TriangleError
+      #elsif a < b && c < b || b < a && c < a || a < c && b < c
+      #  raise TriangleError
       elsif a == b && b == c
         kind = :equilateral
       elsif b != c && a != b && a != c
