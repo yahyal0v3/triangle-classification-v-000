@@ -8,7 +8,7 @@ class Triangle
   end
 
   def kind
-    binding.pry 
+    binding.pry
     @sides.combination(2).each do |a, b|
       if a == b
         :equilateral
