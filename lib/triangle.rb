@@ -13,7 +13,7 @@ class Triangle
     @sides.combination(3).each do |a, b, c|
       if a == b && b == c
         kind = :equilateral
-      elsif b != c || a != b
+      elsif b != c || a != b || a != c
         kind = :scalene
       else
         kind = :isosceles
