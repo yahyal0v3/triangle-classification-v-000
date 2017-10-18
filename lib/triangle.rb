@@ -8,6 +8,7 @@ class Triangle
   end
 
   def kind
+    binding.pry
     kind = nil
     @sides.combination(3).each do |a, b, c|
       if a == b && b == c
